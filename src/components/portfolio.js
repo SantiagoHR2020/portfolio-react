@@ -80,20 +80,7 @@ export default function Album() {
               Make it short and sweet, but not too short so folks don&apos;t simply skip over it
               entirely.
             </Typography>
-            <div className={classes.heroButtons}>
-              <Grid container spacing={2} justify="center">
-                <Grid item>
-                  <Button variant="contained" color="primary">
-                    Main call to action
-                  </Button>
-                </Grid>
-                <Grid item>
-                  <Button variant="outlined" color="primary">
-                    Secondary action
-                  </Button>
-                </Grid>
-              </Grid>
-            </div>
+
           </Container>
         </div>
         <Container className={classes.cardGrid} maxWidth="md">

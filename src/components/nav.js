@@ -6,6 +6,9 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
+import Portfolio from "./portfolio";
+import Contact from "./contact";
+import About from "./about";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -76,19 +79,19 @@ export default function NavTabs() {
           onChange={handleChange}
           aria-label="nav tabs example"
         >
-          <LinkTab label="Page One" href="/drafts" {...a11yProps(0)} />
-          <LinkTab label="Page Two" href="/trash" {...a11yProps(1)} />
-          <LinkTab label="Page Three" href="/spam" {...a11yProps(2)} />
+          <LinkTab label="About" href="/drafts" {...a11yProps(0)} />
+          <LinkTab label="Portfolio" href="/trash" {...a11yProps(1)} />
+          <LinkTab label="Contact" href="/spam" {...a11yProps(2)} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-        Page One
+      <p>About</p>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Page Two
+        <Portfolio />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Page Three
+        <p>Contact</p>
       </TabPanel>
     </div>
   );
