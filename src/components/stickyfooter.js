@@ -7,9 +7,9 @@ import Link from '@material-ui/core/Link';
 
 function Copyright() {
   return (
-    <Typography variant="body2" color="textSecondary">
+    <Typography variant={"body2"} color={"textSecondary"}>
       {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
+      <Link color={"inherit"} href={"https://material-ui.com/"}>
         Your Website
       </Link>{' '}
       {new Date().getFullYear()}
@@ -42,7 +42,7 @@ export default function StickyFooter() {
   return (
     <div className={classes.root}>
       <CssBaseline />
-      <Container component="main" className={classes.main} maxWidth="sm">
+      {/* <Container component="main" className={classes.main} maxWidth="sm">
         <Typography variant="h2" component="h1" gutterBottom>
           Sticky footer
         </Typography>
@@ -51,10 +51,10 @@ export default function StickyFooter() {
           {'The footer will move as the main element of the page grows.'}
         </Typography>
         <Typography variant="body1">Sticky footer placeholder.</Typography>
-      </Container>
+      </Container> */}
       <footer className={classes.footer}>
-        <Container maxWidth="sm">
-          <Typography variant="body1">My sticky footer can be found here.</Typography>
+        <Container maxWidth={"sm"}>
+          <Typography variant={"body1"}>My sticky footer can be found here.</Typography>
           <Copyright />
         </Container>
       </footer>
