@@ -1,98 +1,120 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, useTheme } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
+import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
-import Portfolio from "./portfolio";
-import Contact from "./contact";
-import About from "./about";
-
-function TabPanel(props) {
-  const { children, value, index, ...other } = props;
-
-  return (
-    <div
-      role="tabpanel"
-      hidden={value !== index}
-      id={`nav-tabpanel-${index}`}
-      aria-labelledby={`nav-tab-${index}`}
-      {...other}
-    >
-      {value === index && (
-        <Box p={3}>
-          <Typography>{children}</Typography>
-        </Box>
-      )}
-    </div>
-  );
-}
-
-TabPanel.propTypes = {
-  children: PropTypes.node,
-  index: PropTypes.any.isRequired,
-  value: PropTypes.any.isRequired,
-};
-
-function a11yProps(index) {
-  return {
-    id: `nav-tab-${index}`,
-    'aria-controls': `nav-tabpanel-${index}`,
-  };
-}
-
-function LinkTab(props) {
-  return (
-    <Tab
-      component="a"
-      onClick={(event) => {
-        event.preventDefault();
-      }}
-      {...props}
-    />
-  );
-}
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
+import Menu from '@material-ui/core/Menu';
+import { withRouter } from 'react-router-dom';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+import { Button } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    backgroundColor: theme.palette.background.paper,
   },
+  menuButton: {
+    marginRight: theme.spacing(2),
+  },
+  title: {
+     
+      flexGrow: 1,
+    
+  },
+  headerOptions:{
+   
+    justifyContent: "space-evenly"
+    
+  },
+ button:{
+   margin:'0px 8px',
+   color:"white"
+ }
+
 }));
 
-export default function NavTabs() {
+const NavBar = (props) => {
+  console.log(props);
+  const { history } = props;
   const classes = useStyles();
-  const [value, setValue] = React.useState(0);
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
+  const handleMenu = (event) => {
+    setAnchorEl(event.currentTarget);
   };
+
+  const handleMenuClick = (newRoute) => {
+    history.push(newRoute);
+    setAnchorEl(null);
+  };
+
+  const handleButtonClick = (newRoute) => {
+    history.push(newRoute);
+  } 
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
-        <Tabs
-          variant="fullWidth"
-          value={value}
-          onChange={handleChange}
-          aria-label="nav tabs example"
-        >
-          <LinkTab label="About" href="/drafts" {...a11yProps(0)} />
-          <LinkTab label="Portfolio" href="/trash" {...a11yProps(1)} />
-          <LinkTab label="Contact" href="/spam" {...a11yProps(2)} />
-        </Tabs>
+      <AppBar position='static'>
+        <Toolbar>
+          <Typography variant='h6' className={classes.title}>
+            Santiago Hincapie
+          </Typography>
+
+          <div>
+            {isMobile ? (
+              <>
+                <IconButton
+                  edge='start'
+                  className={classes.menuButton}
+                  color='inherit'
+                  aria-label='menu'
+                  onClick={handleMenu}
+                >
+                  <MenuIcon />
+                </IconButton>
+                <Menu
+                  id='menu-appbar'
+                  anchorEl={anchorEl}
+                  anchorOrigin={{
+                    vertical: 'top',
+                    horizontal: 'right',
+                  }}
+                  keepMounted
+                  transformOrigin={{
+                    vertical: 'top',
+                    horizontal: 'right',
+                  }}
+                  open={open}
+                  onClose={() => setAnchorEl(null)}
+                >
+                  <MenuItem onClick={() => handleMenuClick('/')}>
+                    About
+                  </MenuItem>
+                  <MenuItem onClick={() => handleMenuClick('/portfolio')}>
+                    Portfolio
+                  </MenuItem>
+                  <MenuItem onClick={() => handleMenuClick('/contact')}>
+                    Contact
+                  </MenuItem>
+                </Menu>
+              </>
+            ) : (
+              <div className={classes.headerOptions}>
+                <Button className={classes.button} onClick={() => handleButtonClick('/')}>About</Button>
+                <Button className={classes.button} onClick={() => handleButtonClick('/portfolio')}>Porfolio</Button>
+                <Button className={classes.button} onClick={() => handleButtonClick('/contact')}>Contact</Button>
+              </div>
+            )}
+          </div>
+        </Toolbar>
       </AppBar>
-      <TabPanel value={value} index={0}>
-      <p>About</p>
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-        <Portfolio />
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-        <p>Contact</p>
-      </TabPanel>
     </div>
   );
-}
+};
+
+export default withRouter(NavBar);

@@ -1,0 +1,133 @@
+/* about page */
+
+.aboutContainer{
+  margin-top: 35px;
+  padding: 20px;
+}
+
+
+.aboutContainer col-sm-{
+  margin-top: 0px;
+  padding: 0px;
+}
+
+.aboutContainer col-md-{
+  margin-top: 35px;
+  padding: 20px;
+}
+/* Portfolio page  */
+
+.porMar {
+  margin-bottom: 10rem;
+}
+
+.portfolioH1{
+    margin-top: 35px;
+}
+
+.portfolioContainer .card-body{
+  min-height: 480px;
+}
+
+.cardMarg {
+  margin-bottom: 2rem;
+}
+
+
+
+/* Contatct page */
+
+.contactContainer {
+  margin-top: 130px;
+}
+
+.pickRow {
+  margin: 30px;
+}
+
+ /* Style all font awesome icons */
+
+ .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  /* Footer */
+
+  .fa {
+    
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .fa-html5 {
+    background: #e44d26;
+    color: white;
+  }
+
+  .fa-linkedin-square {
+    
+    background: #2867b2;
+    color: white;
+  }
+  
+  .fa-github-square {
+    
+    background: black;
+    color: white;
+  } 
+
+  .fa-address-book-o{
+    
+    background: red;
+    color: white;
+  }
+
+  .fa-git-square{
+    background: black;
+    color: white;
+  }
+
+.aboutContainer{
+  margin-bottom: 10rem;
+}
+
+  footer{
+    height: 120px;
+   
+  }
+
+  .scroll{
+    max-height: 100px;
+    overflow-y: auto;
+  }
+
+
+  .centerImage {
+    display: block;
+    margin-top: .75rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: .75rem;
+    width: 75%;
+  }
+
+
+ 
+
+ 
+
+
