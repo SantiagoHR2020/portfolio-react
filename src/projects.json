@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "Crush it!",
-        "img": "/images/CrushIt.PNG",
+        "img": "images/CrushIt.PNG",
         "dis": "Crush It! is a personal workout tracking application that will allow the user to setup an account, create a workout routine by selecting from a range of exercises, and track your progress compared to previous sessions. The app was deployed on Heroku.",
         "tech": "Technologies used: JavaScript, JQuery, HTML5, CSS3, Bootstrap, Node.js, Express, Sequelize, Handlebars",
         "Git": "https://github.com/SantiagoHR2020/Project2-Group6",
@@ -11,16 +11,16 @@
     {
         "id": 2,
         "title": "MVC Tech Blog",
-        "img": "/images/MVCTechBlog.PNG",
+        "img": "images/MVCTechBlog.PNG",
         "dis": "CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well.",
         "tech": "Technologies used: HTML5, CSS3, Node.js, Express, Sequelize, Handlebars",
         "Git": "https://github.com/SantiagoHR2020/MVC-Tech-Blog",
         "Live": "https://boiling-brushlands-73776.herokuapp.com/"
     },
     {
-        "id": 2,
+        "id": 3,
         "title": "Work Day Scheduler",
-        "img": "/images/Scheduler.PNG",
+        "img": "images/Scheduler.PNG",
         "dis": "The application allows a user to save events for each hour of the day using moment.js..",
         "tech": "Technologies used: JavaScript, JQuery, HTML5, CSS3",
         "Git": "https://github.com/SantiagoHR2020/Third-Party-APIs-Work-Day-Scheduler",
