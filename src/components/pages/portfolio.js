@@ -55,10 +55,13 @@ const useStyles = makeStyles((theme) => ({
   cardContent: {
     flexGrow: 1,
   },
-  footer: {
-    backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(6),
+  cardAction: {
+    justifyContent:"center"
   },
+  main: {
+    marginTop: theme.spacing(8),
+    marginBottom: theme.spacing(2),
+  }
 }));
 
 
@@ -82,9 +85,7 @@ console.log(projects)
               Portfolio
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
-              Something short and leading about the collection below—its contents, the creator, etc.
-              Make it short and sweet, but not too short so folks don&apos;t simply skip over it
-              entirely.
+              Below is a small sample of my work. See my GitHub for a more complete list of project and details.
             </Typography>
 
           </Container>
@@ -111,7 +112,7 @@ console.log(projects)
                     {card.tech}
                     </Typography>
                   </CardContent>
-                  <CardActions >
+                  <CardActions className={classes.cardAction} >
                   
                     <Button size="small" color="primary" href={card.Live} target="_blank">
                       

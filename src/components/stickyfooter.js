@@ -4,13 +4,16 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
+import { FaLinkedin } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
+import { FaAddressCard } from 'react-icons/fa';
 
 function Copyright() {
   return (
-    <Typography variant={"body2"} color={"textSecondary"}>
+    <Typography variant={'body2'} color={'textSecondary'}>
       {'Copyright © '}
-      <Link color={"inherit"} href={"https://material-ui.com/"}>
-        Your Website
+      <Link color={'inherit'} href={'https://material-ui.com/'}>
+        Santiago Hincapie
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -19,21 +22,16 @@ function Copyright() {
 }
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    display: 'flex',
-    flexDirection: 'column',
-    minHeight: '100vh',
-  },
-  main: {
-    marginTop: theme.spacing(8),
-    marginBottom: theme.spacing(2),
-  },
   footer: {
     padding: theme.spacing(3, 2),
-    marginTop: 'auto',
+    margin: 'auto',
     backgroundColor:
-      theme.palette.type === 'light' ? theme.palette.grey[200] : theme.palette.grey[800],
+      theme.palette.type === 'light'
+        ? theme.palette.grey[200]
+        : theme.palette.grey[800],
   },
+  
+ 
 }));
 
 export default function StickyFooter() {
@@ -41,20 +39,33 @@ export default function StickyFooter() {
 
   return (
     <div className={classes.root}>
-      <CssBaseline />
-      {/* <Container component="main" className={classes.main} maxWidth="sm">
-        <Typography variant="h2" component="h1" gutterBottom>
-          Sticky footer
-        </Typography>
-        <Typography variant="h5" component="h2" gutterBottom>
-          {'Pin a footer to the bottom of the viewport.'}
-          {'The footer will move as the main element of the page grows.'}
-        </Typography>
-        <Typography variant="body1">Sticky footer placeholder.</Typography>
-      </Container> */}
+      
       <footer className={classes.footer}>
-        <Container maxWidth={"sm"}>
-          <Typography variant={"body1"}>My sticky footer can be found here.</Typography>
+        <Container maxWidth={'sm'} >
+          <span>
+            <a
+              href='https://github.com/SantiagoHR2020'
+              target='_blank'
+              style={{}}
+            >
+              <FaGithub size={30} color='black' />{' '}
+            </a>
+          </span>
+          <span>
+            <a
+              href='http://www.linkedin.com/in/santiago-hincapie'
+              target='_blank'
+              style={{}}
+            >
+              <FaLinkedin size={30} color='blue' />{' '}
+            </a>
+          </span>
+          <span>
+            <a href='mailto:santiagohr81@hotmail.com' style={{}}>
+              <FaAddressCard size={30} color='red' />{' '}
+            </a>
+          </span>
+
           <Copyright />
         </Container>
       </footer>

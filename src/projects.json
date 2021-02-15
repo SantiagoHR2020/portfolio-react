@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "Crush it!",
-        "img": "images/CrushIt.PNG",
+        "img": "./images/CrushIt.PNG",
         "dis": "Crush It! is a personal workout tracking application that will allow the user to setup an account, create a workout routine by selecting from a range of exercises, and track your progress compared to previous sessions. The app was deployed on Heroku.",
         "tech": "Technologies used: JavaScript, JQuery, HTML5, CSS3, Bootstrap, Node.js, Express, Sequelize, Handlebars",
         "Git": "https://github.com/SantiagoHR2020/Project2-Group6",
@@ -10,21 +10,39 @@
     },
     {
         "id": 2,
+        "title": "Food Group",
+        "img": "./images/mobile-food-demo.gif",
+        "dis": "The application searches for a recipe and displays stores nearby using 2 APIs Edamam, and Google Places.",
+        "tech": "Technologies used: JavaScript, JQuery, HTML5, CSS3, Materialize",
+        "Git": "https://github.com/SantiagoHR2020/Food-Group",
+        "Live": "https://santiagohr2020.github.io/Food-Group/. "
+    },
+    {
+        "id": 3,
         "title": "MVC Tech Blog",
-        "img": "images/MVCTechBlog.PNG",
+        "img": "./images/MVCTechBlog.PNG",
         "dis": "CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well.",
         "tech": "Technologies used: HTML5, CSS3, Node.js, Express, Sequelize, Handlebars",
         "Git": "https://github.com/SantiagoHR2020/MVC-Tech-Blog",
         "Live": "https://boiling-brushlands-73776.herokuapp.com/"
     },
     {
-        "id": 3,
+        "id": 4,
         "title": "Work Day Scheduler",
-        "img": "images/Scheduler.PNG",
-        "dis": "The application allows a user to save events for each hour of the day using moment.js..",
+        "img": "./images/Scheduler.PNG",
+        "dis": "The application allows a user to save events for each hour of the day using moment.js.",
         "tech": "Technologies used: JavaScript, JQuery, HTML5, CSS3",
         "Git": "https://github.com/SantiagoHR2020/Third-Party-APIs-Work-Day-Scheduler",
-        "Live": "https://santiagohr2020.github.io/05-Third-Party-APIs-Work-Day-Scheduler/"
+        "Live": "https://santiagohr2020.github.io/Third-Party-APIs-Work-Day-Scheduler/"
+    },
+    {
+        "id": 5,
+        "title": "Weather Dashboard",
+        "img": "./images/weather.PNG",
+        "dis": " The application retrieves the weather for the current day and a five day forecast and keeps a history of searches using moment.js and Openweathermap API.",
+        "tech": "Technologies used: JavaScript, JQuery, HTML5, CSS3, Bootstrap",
+        "Git": "https://github.com/SantiagoHR2020/06-Server-Side-APIs-Weather-Dashboard",
+        "Live": "https://santiagohr2020.github.io/Server-Side-APIs-Weather-Dashboard/"
     }
 ]
   

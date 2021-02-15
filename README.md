@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# portfolio-react
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Created by Santiago Hincapie 
 
-## Available Scripts
+# Updated on 2/14/2021
 
-In the project directory, you can run:
+# Link to web site
 
-### `npm start`
+https://santiagohr2020.github.io/Responsive-Portfolio/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Page layout
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Contains three pages; About Me, Portfolio, and Contact pages.
 
-### `npm test`
+# About Me (Desktop image)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![screenshot of about me page desktop image](assets/images/Screenshots/screenshot1.PNG)
 
-### `npm run build`
+# About Me (Tablet image)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![screenshot of about me page tablet image](assets/images/Screenshots/screenshot2.PNG)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# About Me (Phone image)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![screenshot of about me page phone image](assets/images/Screenshots/screenshot3.PNG)
 
-### `npm run eject`
+# Portfolio (Desktop image)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![screenshot of portfolio page desktop image](assets/images/Screenshots/screenshot4.PNG)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Portfolio (Tablet image)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![screenshot of portfolio page tablet image](assets/images/Screenshots/screenshot5.PNG)
 
-## Learn More
+# Portfolio (Phone image)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![screenshot of portfolio page phone image](assets/images/Screenshots/screenshot6.PNG)
 
-### Code Splitting
+# Contact (Descktop image)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+![screenshot of contact page desktop image](assets/images/Screenshots/screenshot7.PNG)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# Contact (Tablet image)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![screenshot of contact page tablet image](assets/images/Screenshots/screenshot8.PNG)
 
-### Advanced Configuration
+# Contact (Phone image)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![screenshot of contact page phone image](assets/images/Screenshots/screenshot9.PNG)
