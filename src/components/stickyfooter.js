@@ -24,13 +24,22 @@ function Copyright() {
 const useStyles = makeStyles((theme) => ({
   footer: {
     padding: theme.spacing(3, 2),
-    margin: 'auto',
+    
     backgroundColor:
       theme.palette.type === 'light'
         ? theme.palette.grey[200]
         : theme.palette.grey[800],
   },
-  
+  iconsContainer:{
+    display: 'flex',
+    
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  icon:{
+    marginLeft: '5px',
+    marginRight: '5px'
+  }
  
 }));
 
@@ -38,11 +47,11 @@ export default function StickyFooter() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    
       
       <footer className={classes.footer}>
-        <Container maxWidth={'sm'} >
-          <span>
+        <Container className={classes.iconsContainer} maxWidth={'sm'} >
+          <span className={classes.icon}>
             <a
               href='https://github.com/SantiagoHR2020'
               target='_blank'
@@ -51,7 +60,7 @@ export default function StickyFooter() {
               <FaGithub size={30} color='black' />{' '}
             </a>
           </span>
-          <span>
+          <span className={classes.icon}>
             <a
               href='http://www.linkedin.com/in/santiago-hincapie'
               target='_blank'
@@ -60,15 +69,18 @@ export default function StickyFooter() {
               <FaLinkedin size={30} color='blue' />{' '}
             </a>
           </span>
-          <span>
+          <span className={classes.icon}>
             <a href='mailto:santiagohr81@hotmail.com' style={{}}>
               <FaAddressCard size={30} color='red' />{' '}
             </a>
           </span>
 
+          
+        </Container>
+        <Container className={classes.iconsContainer} maxWidth={'sm'}>
           <Copyright />
         </Container>
       </footer>
-    </div>
+    
   );
 }

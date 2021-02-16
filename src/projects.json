@@ -13,7 +13,7 @@
         "title": "Food Group",
         "img": "./images/mobile-food-demo.gif",
         "dis": "The application searches for a recipe and displays stores nearby using 2 APIs Edamam, and Google Places.",
-        "tech": "Technologies used: JavaScript, JQuery, HTML5, CSS3, Materialize",
+        "tech": "Technologies used: JavaScript, JQuery, HTMLnpm run deplo5, CSS3, Materialize",
         "Git": "https://github.com/SantiagoHR2020/Food-Group",
         "Live": "https://santiagohr2020.github.io/Food-Group/. "
     },
