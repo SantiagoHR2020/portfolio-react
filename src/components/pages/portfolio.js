@@ -61,7 +61,13 @@ const useStyles = makeStyles((theme) => ({
   main: {
     marginTop: theme.spacing(8),
     marginBottom: theme.spacing(2),
-  }
+  },
+  cardTechContent: {
+    flexGrow: 1,
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+},
 }));
 
 
@@ -85,7 +91,7 @@ console.log(projects)
               Portfolio
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
-              Below is a small sample of my work. See my GitHub for a more complete list of project and details.
+              Below is a small sample of my work. See my GitHub for a more complete list of projects.
             </Typography>
 
           </Container>
@@ -107,19 +113,24 @@ console.log(projects)
                     </Typography>
                     <Typography align="left">
                     {card.dis}
-                    <br/>
-                    <br/>
-                    {card.tech}
+                 
                     </Typography>
+                    
+                  </CardContent>
+                  <CardContent>
+                    <Typography>
+                    <b>Technologies Used:</b> <br/>{card.tech}
+                    </Typography>
+
                   </CardContent>
                   <CardActions className={classes.cardAction} >
                   
                     <Button size="small" color="primary" href={card.Live} target="_blank">
                       
-                      Live
+                      <b>Live</b>
                     </Button>
                     <Button size="small" color="primary" href={card.Git} target="_blank">
-                      GitHub
+                      <b>GitHub</b>
                     </Button>
                   </CardActions>
                 </Card>
