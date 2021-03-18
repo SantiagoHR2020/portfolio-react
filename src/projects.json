@@ -4,7 +4,7 @@
         "title": "Cedar House Candles",
         "img": "./images/cedarHouseCandlesSSHome_tiny.png",
         "dis": "A small full stack ecommerce website that is performance optimize, can scale up, single page website, secure, and easy for the client to maintain without developer help. The app was deployed on Heroku and Atlas MongoDB. It uses the PayPal API for payment processing",
-        "tech": " JavaScript, HTML5, CSS3, React, Material UI, Node.js, Express, MongoDB, Mongoose, passport.js, axios",
+        "tech": " JavaScript, HTML5, CSS3, React, Material UI, Node.js, Express, MongoDB, Mongoose, passport.js",
         "Git": "https://github.com/SantiagoHR2020/cedar-house-candles",
         "Live": "https://cedar-house-candles-project.herokuapp.com/"
     },
@@ -20,9 +20,9 @@
     {
         "id": 3,
         "title": "Food Group",
-        "img": "./images/mobile-food-demo.gif",
-        "dis": "The Front-End application searches for a recipe and displays stores nearby using 2 APIs Edamam, and Google Places.",
-        "tech": " JavaScript, JQuery, HTMLnpm run deplo5, CSS3, Materialize",
+        "img": "./images/mobile-food-demo.PNG",
+        "dis": "It's a Front-End application that searches for a recipe based on the name or the ingredients, and displays stores nearby using two APIs Edamam, and Google Places.",
+        "tech": " JavaScript, JQuery, HTML5, CSS3, Materialize                   ",
         "Git": "https://github.com/SantiagoHR2020/Food-Group",
         "Live": "https://santiagohr2020.github.io/Food-Group/. "
     },
